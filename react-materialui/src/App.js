@@ -1,11 +1,16 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import { Button, createTheme } from '@material-ui/core';
 
 
 function App() {
   return (
-    <div><Button color="primary">Hello World</Button>;
-  </div>
+    <div>
+      <ThemeProvider>
+        <Button variant="contained" color="primary">
+          Primary
+        </Button>
+      </ThemeProvider>
+    </div>
   );
 }
 
